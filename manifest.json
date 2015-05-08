@@ -1,0 +1,26 @@
+{
+    "name": "No Referer Image",
+    "manifest_version": 2,
+    "version" : "1.0.1",
+    "description": "No referer http header for image http request",
+    "icons": {
+        "128": "icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "on.png",
+        "default_title": "Click to disable"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "short_name": "NRI",
+    "homepage_url": "http://www.txthinking.com",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/"
+    ]
+}
+
